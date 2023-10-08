@@ -39,7 +39,7 @@ func _process(delta):
 		$AnimatedSprite.animation = "up"
 		$AnimatedSprite.flip_v = velocity.y > 0
 
-func _on_Player_body_entered(body:Node):
+func _on_Player_body_entered(_body:Node):
 	hide()
 	emit_signal("hit")
 
